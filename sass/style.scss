@@ -1,0 +1,32 @@
+@charset "utf-8";
+@use "./partials/common/" as common;
+@forward "./partials/basic";
+
+@mixin setCommonTextBoxStyle {
+    margin: 0.5rem 0;
+}
+
+@mixin setCommonButtonStyle {
+    display: block;
+    color: common.$default-font-color;
+}
+
+.form {
+    width: inherit;
+    margin: 0 auto;
+    &--auth {
+        width: 20rem - 1.25rem * 2;
+        padding: 0.25rem 1.25rem;
+    }
+}
+
+.input {
+    &__text--auth {
+        @include setCommonTextBoxStyle();
+    }
+    &__button--submit {
+        @include setCommonButtonStyle();
+        margin: 0.75rem auto;
+    }
+}
+
