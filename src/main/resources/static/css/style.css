@@ -52,4 +52,8 @@ footer {
   color: dimgray;
   margin: 0.75rem auto;
 }
+.input__link--signup {
+  display: block;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
