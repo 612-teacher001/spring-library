@@ -1,0 +1,5 @@
+\c postgres
+DROP DATABASE IF EXISTS librarydb;
+DROp ROLE IF EXISTS student;
+CREATE ROLE student WITH PASSWORD 'himitu' LOGIN;
+CREATE DATABASE librarydb OWNER student ENCODING 'UTF8';
