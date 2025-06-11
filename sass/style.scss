@@ -21,12 +21,25 @@
 }
 
 .input {
-    &__text--auth {
-        @include setCommonTextBoxStyle();
+    // テキストボックスのスタイル
+    &__text {
+        &--auth {
+            @include setCommonTextBoxStyle();
+        }
     }
-    &__button--submit {
-        @include setCommonButtonStyle();
-        margin: 0.75rem auto;
+    // ボタンのスタイル
+    &__button {
+        &--submit {
+            @include setCommonButtonStyle();
+            margin: 0.75rem auto;
+        }
+    }
+    // リンクのスタイル
+    &__link {
+        &--signup {
+            display: block;
+            text-align: center;
+        }
     }
 }
 
